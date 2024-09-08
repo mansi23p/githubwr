@@ -1,0 +1,99 @@
+/* Import Catchy Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); /* Example: Roboto for a catchy font */
+
+/* Navbar Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    z-index: 1000; /* Ensure the navbar is on top of other content */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Logo Styles */
+.logo {
+    font-family: 'Roboto', sans-serif; /* Apply catchy font */
+    font-size: 1.9vw; /* Adjust font size as needed */
+    font-weight: 700; /* Make it bold for emphasis */
+    display: flex;
+    align-items: center;
+}
+
+/* Specific styles for GitHub and Wrapper text */
+.logoText {
+    color: #ffffff; /* Color for "GitHub" */
+}
+
+.logoAccent {
+    color: #00e5ff; /* Color for "Wrapper" */
+    margin-left: 5px; /* Space between "GitHub" and "Wrapper" */
+}
+
+/* Adjusted .logoLink */
+.logoLink {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar Links */
+.navbar {
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+}
+
+.navbar i {
+    font-size: 1.6vw;
+    font-weight: 800;
+    display: none;
+}
+
+.navLink {
+    color: #ffffff; /* Adjust color as needed */
+    text-decoration: none;
+    font-size: 1.4vw;
+    transition: color 0.3s;
+}
+
+.navLink:hover {
+    color: #74f0ed; /* Adjust hover color as needed */
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling for anchor links */
+}
+
+/* Media Query for screens up to 600px wide */
+@media (max-width: 600px) {
+    .header {
+        padding: 10px 20px; /* Reduce padding for smaller screens */
+    }
+
+    .logo {
+        font-size: 3vw; /* Increase font size for better visibility */
+    }
+
+    .navbar {
+        gap: 2vw; /* Reduce space between links */
+    }
+
+    .navLink {
+        font-size: 2.2vw; /* Adjust font size for smaller screens */
+        display: none; /* Hide navbar links */
+    }
+
+    .navbar i {
+        display: block; /* Show icon (if needed) */
+        font-size: 5vw; /* Adjust size of any icons */
+    }
+}
